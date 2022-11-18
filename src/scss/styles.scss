@@ -1,3 +1,5 @@
+// Find default vars: node_modules>bootstrap>scss>_variables.scss
+
 // Import all of Bootstrap's CSS (this is for importing style sheets individually)
 // Toggle global options
 $enable-gradients: true;
@@ -58,5 +60,3 @@ $success: #7952b3;
 
 // Utilities
 @import "~bootstrap/scss/utilities/api";
-
-
