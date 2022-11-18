@@ -1,10 +1,17 @@
-// Import our custom CSS
+// import React
+import React from "react";
+import { createRoot } from "react-dom/client";
+import App from "./App";
+// Import our custom CSS, BS alerts and BS Toast & Popover
 import './scss/styles.scss';
-// alerts from BS
 import Alert from 'bootstrap/js/dist/alert';
-// Import all of Bootstrap's JS
 import { Toast, Popover } from 'bootstrap';
 
-const helloDiv = document.createElement("div");
-helloDiv.innerHTML = "Hello from Javascript!";
-document.body.append(helloDiv);
+
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>
+);
